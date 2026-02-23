@@ -9,6 +9,12 @@
     "temperature_pref":"warm",
     "season": ["kharif"],
     "topography":["flat","lowland"],
+    "base_yield_per_hectare": 4200,
+    "yield_unit": "kg_per_hectare",
+    "seed_variety_multiplier": {
+        "local": 1.0,
+        "hybrid": 1.25,
+        "high_yield": 1.4},
     "additional_sensitivities":["waterlogging","fungal_disease"] 
   },
 
@@ -20,7 +26,14 @@
     "temperature_pref":"warm",
     "season": ["kharif"],                   
     "topography":["flat"],
-    "additional":["water_stress","nutrient_depletion"]
+    "base_yield_per_hectare": 70000,
+    "yield_unit": "kg_per_hectare",
+    "seed_variety_multiplier": {
+        "local": 1.0,
+        "hybrid": 1.25,
+        "high_yield": 1.4
+  },
+    "additional_sensitivities":["water_stress","nutrient_depletion"]
 
   },
 
@@ -32,6 +45,13 @@
       "temperature_pref": "moderate_to_warm",
       "season": ["kharif", "rabi"],
       "topography": ["flat", "gentle_slope"],
+      "base_yield_per_hectare": 5000,
+    "yield_unit": "kg_per_hectare",
+    "seed_variety_multiplier": {
+        "local": 1.0,
+        "hybrid": 1.25,
+        "high_yield": 1.4
+  },
       "additional_sensitivities": ["waterlogging"]
   },
 
@@ -43,6 +63,13 @@
       "temperature_pref": "warm",
       "season": ["kharif", "summer"],
       "topography": ["upland", "well_drained"],
+      "base_yield_per_hectare": 900,
+    "yield_unit": "kg_per_hectare",
+    "seed_variety_multiplier": {
+        "local": 1.0,
+        "hybrid": 1.25,
+        "high_yield": 1.4
+  },
       "additional_sensitivities": ["excess_rainfall"]
   },
 
@@ -54,6 +81,13 @@
       "temperature_pref": "warm",
       "season": ["kharif"],
       "topography": ["upland", "gentle_slope"],
+      "base_yield_per_hectare": 1800,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["waterlogging", "soil_compaction"]
   },
 
@@ -65,6 +99,13 @@
       "temperature_pref": "warm",
       "season": ["kharif", "rabi"],
       "topography": ["upland"],
+      "base_yield_per_hectare": 20000,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["excess_moisture"]
   },
 
@@ -76,6 +117,13 @@
       "temperature_pref": "moderate",
       "season": ["rabi"],
       "topography": ["flat"],
+      "base_yield_per_hectare": 18000,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["waterlogging", "humidity"]
   },
   
@@ -87,6 +135,13 @@
       "temperature_pref": "cool_to_moderate",
       "season": ["rabi"],
       "topography": ["flat"],
+      "base_yield_per_hectare": 25000,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["heat_stress", "waterlogging"]
   },
 
@@ -98,6 +153,13 @@
       "temperature_pref": "warm",
       "season": ["kharif"],
       "topography": ["upland", "flat"],
+      "base_yield_per_hectare": 850,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["excess_rainfall"]
   },
 
@@ -109,6 +171,13 @@
       "temperature_pref": "warm",
       "season": ["kharif"],
       "topography": ["upland"],
+      "base_yield_per_hectare": 1100,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["waterlogging"]
   },
   
@@ -120,6 +189,13 @@
       "temperature_pref": "moderate",
       "season": ["kharif"],
       "topography": ["upland", "gentle_slope"],
+      "base_yield_per_hectare": 2200,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["excess_moisture"]
   },
   
@@ -131,6 +207,13 @@
       "temperature_pref": "warm",
       "season": ["rabi"],
       "topography": ["upland"],
+      "base_yield_per_hectare": 700,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["excess_rainfall"]
   },
 
@@ -142,6 +225,13 @@
       "temperature_pref": "warm",
       "season": ["kharif"],
       "topography": ["flat"],
+      "base_yield_per_hectare": 2000,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["water_stress"]
   },
 
@@ -153,6 +243,13 @@
       "temperature_pref": "warm",
       "season": ["kharif"],
       "topography": ["upland"],
+      "base_yield_per_hectare": 600,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
       "additional_sensitivities": ["waterlogging"]
   },
 
@@ -164,6 +261,14 @@
       "temperature_pref": "warm",
       "season": ["kharif", "summer"],
       "topography": ["upland", "flat"],
+      "base_yield_per_hectare": 1000,
+  "yield_unit": "kg_per_hectare",
+  "seed_variety_multiplier": {
+    "local": 1.0,
+    "hybrid": 1.25,
+    "high_yield": 1.4
+  },
+
       "additional_sensitivities": ["excess_rainfall"]
   }
   ]
