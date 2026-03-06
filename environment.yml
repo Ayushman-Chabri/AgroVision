@@ -1,14 +1,22 @@
 name: TrithonEnv
+
 channels:
+  - pytorch
+  - conda-forge
   - defaults
+
 dependencies:
   - python=3.10
-  - pytorch
+  - pytorch=2.2.2
   - torchvision
-  - matplotlib
+  - torchaudio
+  - numpy=1.26.4
+  - matplotlib=3.8.4
   - opencv
-  - streamlit
-  - pathlib
+  - pillow=10.3.0
+  - streamlit=1.35.0
   - pip
+
   - pip:
-      - pyaudio
+      - ollama
+      - pyaudio==0.2.14
