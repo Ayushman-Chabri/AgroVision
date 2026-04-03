@@ -1,7 +1,7 @@
 {
   "profile_id": "odisha_soil",
   "region": "odisha",
-  "soil_types": {
+  
 
     "alluvial": {
       "water_retention": "moderate",
@@ -45,5 +45,5 @@
       "common_risks": ["cracking", "waterlogging"]
     }
 
-  }
+  
 }

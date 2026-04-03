@@ -2,7 +2,7 @@
   "profile_id": "odisha_district",
   "region": "odisha",
 
-  "districts": {
+  
 
     "Angul": {
       "dominant_soil": "red_soil",
@@ -219,4 +219,4 @@
     }
 
   }
-}
+

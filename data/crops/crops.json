@@ -1,8 +1,7 @@
 {
-  "crops":[
 
-  {
-    "crop_id":"paddy",
+
+  "paddy":{
     "display_name": "Rice",
     "suitable_soils": ["alluvial","clayey"],
     "rainfall_range": "high",
@@ -12,8 +11,7 @@
     "additional_sensitivities":["waterlogging","fungal_disease"] 
   },
 
-  {
-    "crop_id": "sugarcane",
+  "sugarcane":{
     "display_name":"Sugarcane",
     "suitable_soils": ["alluvial","loamy"],
     "rainfall_range":"moderate_to_high",
@@ -21,11 +19,9 @@
     "month": ["jan","feb","mar"],
     "topography":["flat"],
     "additional":["water_stress","nutrient_depletion"]
-
   },
 
-  {
-      "crop_id": "maize",
+  "maize":{
       "display_name": "Maize",
       "suitable_soils": ["loamy", "well_drained"],
       "rainfall_range": "moderate",
@@ -35,8 +31,7 @@
       "additional_sensitivities": ["waterlogging"]
   },
 
-  {
-      "crop_id": "mung",
+  "mung":{
       "display_name": "Mung (Green Gram)",
       "suitable_soils": ["sandy_loam", "loamy"],
       "rainfall_range": "low_to_moderate",
@@ -46,8 +41,7 @@
       "additional_sensitivities": ["excess_rainfall"]
   },
 
-  {
-      "crop_id": "groundnut",
+  "groundnut":{
       "display_name": "Groundnut",
       "suitable_soils": ["sandy_loam", "well_drained"],
       "rainfall_range": "moderate",
@@ -57,8 +51,7 @@
       "additional_sensitivities": ["waterlogging", "soil_compaction"]
   },
 
-  {
-      "crop_id": "sweet_potato",
+  "sweet_potato":{
       "display_name": "Sweet Potato",
       "suitable_soils": ["sandy_loam", "loamy"],
       "rainfall_range": "moderate",
@@ -68,8 +61,7 @@
       "additional_sensitivities": ["excess_moisture"]
   },
 
-  {
-      "crop_id": "onion",
+  "onion":{
       "display_name": "Onion",
       "suitable_soils": ["loamy", "well_drained"],
       "rainfall_range": "low_to_moderate",
@@ -79,8 +71,7 @@
       "additional_sensitivities": ["waterlogging", "humidity"]
   },
   
-  {
-      "crop_id": "potato",
+  "potato":{
       "display_name": "Potato",
       "suitable_soils": ["loamy", "well_drained"],
       "rainfall_range": "moderate",
@@ -90,8 +81,7 @@
       "additional_sensitivities": ["heat_stress", "waterlogging"]
   },
 
-  {
-      "crop_id": "biri",
+  "biri":{
       "display_name": "Biri (Black Gram)",
       "suitable_soils": ["loamy", "clayey"],
       "rainfall_range": "moderate",
@@ -101,8 +91,7 @@
       "additional_sensitivities": ["excess_rainfall"]
   },
 
-  {
-      "crop_id": "arhar",
+  "arhar":{
       "display_name": "Arhar (Red Gram)",
       "suitable_soils": ["loamy", "well_drained"],
       "rainfall_range": "low_to_moderate",
@@ -112,8 +101,7 @@
       "additional_sensitivities": ["waterlogging"]
   },
   
-  {
-      "crop_id": "ragi",
+  "ragi":{
       "display_name": "Ragi",
       "suitable_soils": ["red_soil", "well_drained"],
       "rainfall_range": "low_to_moderate",
@@ -123,8 +111,7 @@
       "additional_sensitivities": ["excess_moisture"]
   },
   
-  {
-      "crop_id": "kulthi",
+  "kulthi":{
       "display_name": "Kulthi (Horse Gram)",
       "suitable_soils": ["poor_soil", "red_soil"],
       "rainfall_range": "low",
@@ -134,8 +121,7 @@
       "additional_sensitivities": ["excess_rainfall"]
   },
 
-  {
-      "crop_id": "cotton",
+  "cotton":{
       "display_name": "Cotton",
       "suitable_soils": ["black_soil", "well_drained"],
       "rainfall_range": "moderate",
@@ -145,8 +131,7 @@
       "additional_sensitivities": ["water_stress"]
   },
 
-  {
-      "crop_id": "sesamum",
+ "sesamum": {
       "display_name": "Sesamum (Til)",
       "suitable_soils": ["sandy_loam", "well_drained"],
       "rainfall_range": "low_to_moderate",
@@ -156,8 +141,7 @@
       "additional_sensitivities": ["waterlogging"]
   },
 
-  {
-      "crop_id": "cowpea",
+  "cowpea":{
       "display_name": "Cowpea",
       "suitable_soils": ["sandy_loam", "loamy"],
       "rainfall_range": "moderate",
@@ -166,8 +150,7 @@
       "topography": ["upland", "flat"],
       "additional_sensitivities": ["excess_rainfall"]
   }
-  ]
 
-  
-  
 }
+  
+  

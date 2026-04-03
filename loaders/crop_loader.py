@@ -1,3 +1,4 @@
+
 from loaders.base_loader import load_json
 
 def load_crop_data():
@@ -6,6 +7,8 @@ def load_crop_data():
     '''
     
     
-    return load_json("crop/crops.json")
+    return load_json("crops/crops.json")
+
+
 
 

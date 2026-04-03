@@ -1,67 +1,34 @@
-from loaders.soil_loader import load_soil_data
-from loaders.weather_loader import load_weather_data
-from loaders.region_loader import load_region_data
-from loaders.disease_loader import load_disease_data
-from loaders.technique_loader import load_technique_data
+import matplotlib.pyplot as plt
 
-from loaders.validation import validate_district
+def draw_line(x1, y1, x2, y2):
+    plt.plot([x1, x2], [y1, y2], 'k-')
 
+def draw_h_tree(x, y, length, level, factor=2):
+    if level == 0:
+        return
+    
+    # Calculate half-length
+    half = length / 2
+    
+    # Coordinates of the H
+    left_x = x - half
+    right_x = x + half
+    top_y = y + half
+    bottom_y = y - half
+    
+    # Draw the H
+    draw_line(left_x, top_y, left_x, bottom_y)   # left vertical
+    draw_line(right_x, top_y, right_x, bottom_y) # right vertical
+    draw_line(left_x, y, right_x, y)             # connecting horizontal
+    
+    # Recursive calls for 4 new H-trees
+    draw_h_tree(left_x, top_y, length / factor, level - 1, factor)
+    draw_h_tree(left_x, bottom_y, length / factor, level - 1, factor)
+    draw_h_tree(right_x, top_y, length / factor, level - 1, factor)
+    draw_h_tree(right_x, bottom_y, length / factor, level - 1, factor)
 
-def recommend_full(district):
-    soil_data = load_soil_data()
-    weather_data = load_weather_data()
-    region_data = load_region_data()
-
-    disease_data = load_disease_data()
-    technique_data = load_technique_data()
-
-    # ✅ Validate district
-    if not validate_district(district, soil_data):
-        return f"❌ District '{district}' not found."
-
-    # --- Get soil + rainfall ---
-    soil_type = None
-    rainfall = None
-    crops = []
-
-    for s in soil_data:
-        if s["district"].lower() == district.lower():
-            soil_type = s["soil_type"]
-
-    for w in weather_data:
-        if w["district"].lower() == district.lower():
-            rainfall = w["avg_rainfall_mm"]
-
-    for r in region_data:
-        if r["district"].lower() == district.lower():
-            crops = r["recommended_crops"]
-
-    # --- Add diseases + techniques ---
-    crop_details = []
-
-    for crop in crops:
-
-        # Find diseases
-        diseases = []
-        for d in disease_data:
-            if d["crop"].lower() == crop.lower():
-                diseases = [x["name"] for x in d["common_diseases"]]
-
-        # Find techniques
-        techniques = []
-        for t in technique_data:
-            if t["crop"].lower() == crop.lower():
-                techniques = t["recommended_techniques"]
-
-        crop_details.append({
-            "crop": crop,
-            "diseases": diseases,
-            "techniques": techniques
-        })
-
-    return {
-        "district": district,
-        "soil_type": soil_type,
-        "avg_rainfall_mm": rainfall,
-        "recommended_crops": crop_details
-    }
+# Example: Draw H-tree of level 4
+plt.figure(figsize=(6, 6))
+draw_h_tree(0, 0, 100, 4)
+plt.axis('equal')
+plt.show()
